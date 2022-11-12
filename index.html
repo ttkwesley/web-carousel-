@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Carrossel Slider</title>
+  </head>
+
+  <body> 
+    <div class="container"><!--Container -->
+      <div class="row"><!--Row -->
+        <div class="col-sm-8 m-auto"><!--col-sm8 -->
+          
+          <h1>Slider simples</h1>
+          <div class="carousel slide" data-ride="carousel"> <!--Classes para a abertura do carrosel-->
+            <div class="carousel-inner"> <!--Define div's interna para o carrosel-->
+
+              <div class="carousel-item active"> <!--Difinindo primeiro item como ativo-->
+                <img src="img/imagem1.jpeg" class="img-fluid">
+              </div>
+
+              <div class="carousel-item">
+               <img src="img/imagem2.jpeg" class="img-fluid">
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/imagem3.jpeg">
+              </div>
+
+            </div> <!--Fim do inner-->
+          </div> <!--Fim do carrosel-->
+
+          <h1>Slider com controles</h1>
+          <div id="carrosel-controle" class="carousel slide" data-ride="carousel"> <!--Adicionar ID de controle na abertura do carrosel--> <!--Classes para a abertura do carrosel com controle-->
+            <div class="carousel-inner"> <!--Define div's interna para o carrosel-->
+
+              <div class="carousel-item active"> <!--Difinindo primeiro item como ativo-->
+                <img src="img/imagem1.jpeg" class="img-fluid">
+              </div>
+
+              <div class="carousel-item">
+               <img src="img/imagem2.jpeg" class="img-fluid">
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/imagem3.jpeg">
+              </div>
+
+            </div> <!--Fim do inner-->
+
+            <!--Adicionando controles-->
+            <a href="#carrosel-controle" class="carousel-control-prev" data-slide="prev"> <!--Adicionar ID de controle no link e na abertura do carrosel-->
+              <span class="carousel-control-prev-icon"></span> <!--OBS: Icones de mudança padrão mas tambem pode ser utilizado do font awesome-->
+            </a>
+
+            <a href="#carrosel-controle" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span> <!--OBS: Icones de mudança padrão mas tambem pode ser utilizado do font awesome-->
+            </a>
+
+          </div> <!--Fim do carrosel-->
+
+          <h1>Slider com controles/indicadores</h1>
+          <div id="carrosel-ind" class="carousel slide" data-ride="carousel"> <!--Adicionar ID de controle na abertura do carrosel--> <!--Classes para a abertura do carrosel com controle-->
+            
+            <!--Criando indicadores. OBS: tem que ser utlizado acima da classe inner-->
+            <ol class="carousel-indicators">
+              <li data-target="#carrosel-ind" data-slide-to="0" class="active"></li>
+              <li data-target="#carrosel-ind" data-slide-to="1"></li>
+              <li data-target="#carrosel-ind" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner"> <!--Inicio do inner--> <!--Define div's interna para o carrosel-->
+
+              <div class="carousel-item active"> <!--Difinindo primeiro item como ativo-->
+                <img src="img/imagem1.jpeg" class="img-fluid">
+              </div>
+
+              <div class="carousel-item">
+               <img src="img/imagem2.jpeg" class="img-fluid">
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/imagem3.jpeg">
+              </div>
+
+            </div> <!--Fim do inner-->
+
+            <!--Adicionando controles-->
+            <a href="#carrosel-ind" class="carousel-control-prev" data-slide="prev"> <!--Adicionar ID de controle no link e na abertura do carrosel-->
+              <span class="carousel-control-prev-icon"></span> <!--OBS: Icones de mudança padrão mas tambem pode ser utilizado do font awesome-->
+            </a>
+
+            <a href="#carrosel-ind" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span> <!--OBS: Icones de mudança padrão mas tambem pode ser utilizado do font awesome-->
+            </a>
+
+          </div> <!--Fim do carrosel-->
+
+          <h1>Slider com legendas</h1>
+          <div id="carrosel-leg" class="carousel slide" data-ride="carousel"> <!--Adicionar ID de controle na abertura do carrosel--> <!--Classes para a abertura do carrosel com controle-->
+            
+            <!--Criando indicadores. OBS: tem que ser utlizado acima da classe inner-->
+            <ol class="carousel-indicators">
+              <li data-target="#carrosel-leg" data-slide-to="0" class="active"></li>
+              <li data-target="#carrosel-leg" data-slide-to="1"></li>
+              <li data-target="#carrosel-leg" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner"> <!--Inicio do inner--> <!--Define div's interna para o carrosel-->
+
+              <div class="carousel-item active"> <!--Difinindo primeiro item como ativo-->
+                <img src="img/imagem1.jpeg" class="img-fluid">
+                  <!--Adicionando legenda na imagem, pode ser adicionado qualquer tipo de formatação-->
+                <div class="carousel-caption">
+                  <div>
+                    <a href="#">
+                      <button class="btn btn-warning">Clique aqui</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+               <img src="img/imagem2.jpeg" class="img-fluid">
+
+               <div class="carousel-caption">
+                <h3>Item2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+               </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/imagem3.jpeg">
+                <div class="carousel-caption">
+                  <div style="background: rgba(0, 0, 0, 0.466);">
+                    <h3>Item3</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!--Fim do inner-->
+
+            <!--Adicionando controles-->
+            <a href="#carrosel-leg" class="carousel-control-prev" data-slide="prev"> <!--Adicionar ID de controle no link e na abertura do carrosel-->
+              <span class="carousel-control-prev-icon"></span> <!--OBS: Icones de mudança padrão mas tambem pode ser utilizado do font awesome-->
+            </a>
+
+            <a href="#carrosel-leg" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span> <!--OBS: Icones de mudança padrão mas tambem pode ser utilizado do font awesome-->
+            </a>
+
+          </div> <!--Fim do carrosel-->
+
+        </div><!--/col-sm8 -->
+      </div><!--/Row -->
+    </div><!--/Container -->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
